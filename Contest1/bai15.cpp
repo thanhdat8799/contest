@@ -8,11 +8,13 @@ int main(){
 	while(times--){
 	int stt;
 	cin >> stt;
-	char str[1000000];
+	string str;
 	cin >> str;
-	if(next_permutation(str, str +strlen(str)))
-		cout << str << endl;
-	else cout << "BIGGEST" << endl;
+	
+	if( next_permutation(str.begin(), str.end()) ){
+		cout << stt << " " << str << endl;
+	}
+	else cout << stt << "  << "BIGGEST" << endl;
     }
 	
 	return 0;
